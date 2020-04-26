@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Header, Segment, Divider, Grid,
 } from 'semantic-ui-react';
-import rawQuestions from '../util/questions.json';
+import QuestionPicker from './QuestionPicker';
 
 const Welcome = () => (
   <Grid centered padded="horizontally">
@@ -10,12 +10,10 @@ const Welcome = () => (
       <Grid.Column>
         <Segment>
           <Header>
-            Hello!
-            <Header.Subheader>
-              { rawQuestions && rawQuestions.length > 0 ? 'HAS QUESTIONS' : 'EMPTY QUESTIONS'}
-            </Header.Subheader>
+            Trivia Time!
           </Header>
           <Divider />
+          <QuestionPicker />
         </Segment>
       </Grid.Column>
     </Grid.Row>

@@ -6,11 +6,9 @@ import './index.css';
 import './styles/main.css';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <div class="main-container">
-      <Welcome />
-    </div>
-  </React.StrictMode>,
+  <div className="main-container">
+    <Welcome />
+  </div>,
   document.getElementById('root')
 );
 
