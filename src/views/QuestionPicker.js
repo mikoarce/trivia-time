@@ -5,7 +5,7 @@ import rawQuestions from '../util/questions.json';
 const QuestionPicker = () => {
     const [question, setQuestion] = React.useState();
     return (
-        <Segment placeholder>
+        <Segment attached placeholder style={{ backgroundColor: 'white', height: 500 }}>
             <Header icon>
                 <Icon name="hand spock outline" />
                 {question ? question

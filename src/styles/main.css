@@ -20,7 +20,7 @@ body {
   
   .main-container > .grid {
     width: 100%;
-    max-width: 50rem;
+    max-width: 60rem;
   }
   
   .wrapped-header {
