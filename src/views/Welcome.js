@@ -1,18 +1,16 @@
 import React from 'react';
-import {
-  Header, Segment, Divider, Grid,
-} from 'semantic-ui-react';
+import { Segment, Grid } from 'semantic-ui-react';
+import HeaderRow from './HeaderRow';
 import QuestionPicker from './QuestionPicker';
 
 const Welcome = () => (
   <Grid centered padded="horizontally">
     <Grid.Row stretched>
       <Grid.Column>
-        <Segment>
-          <Header>
-            Trivia Time!
-          </Header>
-          <Divider />
+        <Segment attached='top' compact style={{ display: 'inline-block', padding:'10px 14px' }}>
+          <HeaderRow />
+        </Segment>
+        <Segment attached>
           <QuestionPicker />
         </Segment>
       </Grid.Column>
