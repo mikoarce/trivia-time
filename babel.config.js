@@ -1,32 +1,32 @@
 /* eslint func-names: off */
 module.exports = function (api) {
     api.cache(true);
-  
+
     const presets = [
-      [
-        '@babel/preset-env',
-        {
-          useBuiltIns: 'usage',
-        },
-      ],
-      '@babel/preset-react',
+        [
+            '@babel/preset-env',
+            {
+                useBuiltIns: 'usage',
+            },
+        ],
+        '@babel/preset-react',
     ];
     const plugins = [
-      ['@babel/plugin-proposal-object-rest-spread'],
-      [
-        'semantic-ui-react-transform-imports', {
-          convertMemberImports: true,
-          addCssImports: true,
-        },
-      ],
+        ['@babel/plugin-proposal-object-rest-spread'],
+        [
+            'semantic-ui-react-transform-imports', {
+                convertMemberImports: true,
+                addCssImports: true,
+            },
+        ],
     ];
-  
+
     if (process.env.NODE_ENV === 'test') {
-      plugins.push(['istanbul']);
+        plugins.push(['istanbul']);
     }
-  
+
     return {
-      plugins,
-      presets,
+        plugins,
+        presets,
     };
-  };
+};
